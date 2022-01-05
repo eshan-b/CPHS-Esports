@@ -1,0 +1,5 @@
+(29, 31, 106) - dark blue
+(7, 7, 40) - bg blue
+(65, 56, 182) - normal blue
+(131, 147, 231) - faint blue
+(255, 50, 60) - sussy red

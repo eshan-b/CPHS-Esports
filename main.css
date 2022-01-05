@@ -1,0 +1,198 @@
+/* General */
+:root {
+    --dark_blue: rgb(29, 31, 106);
+    --bg_blue: rgb(7, 7, 40);
+    --normal_blue: rgb(65, 56, 182);
+    --faint_blue: rgb(131, 147, 231);
+    --sussy_red: rgb(255, 50, 60);
+    --off-gray: #808080;
+}
+
+.title {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
+    font-size: 4rem;
+    text-align: center;
+    padding-bottom: 1.5rem;
+}
+
+.paragraph {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    font-size: 1.5rem;
+    line-height: 2.5rem;
+    color: var(--off-gray);
+}
+
+body::-webkit-scrollbar {
+    width: 0.33rem;
+}
+
+body::-webkit-scrollbar-track {
+    background: rgb(7, 7, 40);
+}
+
+body::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.5);
+    background: var(--faint_blue);
+}
+
+/* Navbar */
+.navbar-custom {
+    background-color: rgb(7, 7, 40) !important;
+}
+
+nav .container {
+    animation: fadeIn;
+    animation-duration: 1s;
+}
+
+nav .navbar-brand {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
+    font-size: 1.5rem;
+    color: white;
+}
+
+nav .navbar-nav li a {
+    color: white !important;
+    font-family: "Montserrat", sans-serif;
+}
+
+nav .navbar-nav li:not(:last-child) {
+    border-right: 1px solid #ccc;
+}
+
+.underline {
+    position: relative;
+}
+
+.underline::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 0;
+    height: 2px;
+    background-color: var(--sussy_red);
+    transition: width 0.5s cubic-bezier(0.25, 1, 0.5, 1);
+}
+
+@media (hover: hover) and (pointer: fine) {
+    .underline:hover::before {
+        left: 20%;
+        right: auto;
+        width: 60%;
+    }
+}
+
+/* Quote */
+#quote-section {
+    height: 100vh;
+    background-image: linear-gradient(to bottom right, #3a96cc, #e03737);
+    /* avoid parent & child margin touch */
+    overflow: auto;
+    /* center child items vertically */
+    display: flex;
+    align-items: center;
+}
+
+#quote-box {
+    width: 85%;
+    height: fit-content;
+    border-style: solid;
+    border-color: white !important;
+    border-width: 7px;
+    padding: 2rem 2rem 2rem 2rem;
+    /* center items horizontally */
+    margin: 0 auto;
+
+    animation: fadeInDown;
+    animation-duration: 0.7s;
+}
+
+#quote {
+    font-family: "Montserrat", sans-serif;
+    font-size: 4rem;
+    color: white;
+    line-height: 1.6;
+}
+
+/* About */
+#about-section {
+    height: 100vh;
+    margin-left: -20px;
+    overflow: hidden;
+}
+
+#ps4-img-div {
+    position: relative;
+    height: 100vh;
+    overflow: hidden;
+}
+
+#ps4-img-div img {
+    position: absolute;
+    top: -9999px;
+    left: -9999px;
+    right: -9999px;
+    bottom: -9999px;
+    margin: auto;
+}
+
+#value-box {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    height: 100vh;
+    padding-left: 3rem;
+    padding-right: 3rem;
+}
+
+/* Games */
+#games-section {
+    height: 100vh;
+    background-color: aliceblue;
+    /* center vertically */
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#games-box {
+    padding-left: 4rem;
+    padding-right: 4rem;
+}
+
+#game-row {
+    margin-top: 75px;
+    padding-left: 4rem;
+    padding-right: 4rem;
+}
+
+/* Join */
+#join-section {
+    height: 100vh;
+    overflow: hidden;
+}
+
+#pc-img-div {
+    position: relative;
+    height: 100vh;
+    overflow: hidden;
+}
+
+#pc-img-div img {
+    position: absolute;
+    top: -9999px;
+    left: -9999px;
+    right: -9999px;
+    bottom: -9999px;
+    margin: auto;
+}
+
+#join-box {
+    display: flex;
+    justify-content: space-evenly;
+}
